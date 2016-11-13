@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Semantic Web</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<style type="text/css">
+		
+		body{
+			background-color: #F5D76E;
+		}
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			list-style-type: none;
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none; 
+			color:#fff;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px;
+			text-align: center;
+			font-size: 40px;
+			border-bottom:1px solid white;
+		}
+		#logoNav{
+			font-size: 40px;
+			font-weight: bold;
+			}
+			
+		#landing{
+			display: flex; 
+			flex-direction:column; 
+			justify-content:center;
+			align-items:center; 
+		}
+		#landing-message{
+			text-align: center;
+			font-family: Dosis;
+			font-size: 50px;
+			margin:50px 20px;
+		}
+		#landing-graphic{
+		}
+		/* ------------------Desktop------------------------*/
+		
+		@media screen and (min-width: 700px){
+								
+			nav{
+				width: 90%;
+				flex-flow: row;
+				align-items:baseline;
+				
+			}
+			a{
+				font-size: 25px;
+				border:none;
+			}
+			#logoNav{
+				flex:6;
+				text-align: left;
+			}
+						
+			#landing{
+				flex-direction:row;
+				width:80%;
+				margin: 100px auto;
+			}	
+			.cards{
+				flex-wrap:nowrap;
+				flex-direction:row;
+			}
+			.cardcontainer {
+				
+			}
+		}
+
+		.cards{
+			display: flex;
+		   	flex-direction: row;
+		   	justify-content: space-around;
+		   	
+}
+		.card{
+        	background-color: lightgray;
+        	flex: 1;
+        	padding: 20px;
+        	margin-top: 50px;
+        	margin: 50px, 20px;
+}
+		.card h2{
+        	font-family: Dosis;
+        	font-size: 25px;
+        	margin-top: 10px;
+        	margin-bottom: 20px;
+}
+		.card img{
+        	width:100%;
+        }
+		.card p{
+        	font-family: Dosis;
+        	font-size: 22px;
+}
+		</style>
+</head>
+<body>
+	<nav>
+		<a id="logoNav">CHOCOBLOCK</a>
+		<a href="#">Home</a>
+		<a href="#">Projects</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+		<a href="#">Photos</a>
+	</nav>
+	<div id="landing">
+		<div id="landing-message">
+			<h1>Make Creative Clever Fun Apps. Simple.</h1>
+		</div>
+		<div id="landing-graphic">
+			<img id="landing-image" src="C:/Users/Ryan/pictures/laptop.png" alt="laptop" width="400">
+		</div>
+	</div>
+	<section class="cards">
+        <div class="card">
+                <img src="C:/Users/Ryan/pictures/graphic1.png" alt="design pic">
+                <h2>Web Info Sessions</h2>
+                <p>If you have questions about your career in...</p>
+        </div> 
+        <div class="card">
+                <img src="C:/Users/Ryan/pictures/graphic2.png" alt="design pic">
+                <h2>Remote Learning</h2>
+                <p>If you have questions about your career in...</p>
+        </div>
+        <div class="card">
+                <img src="C:/Users/Ryan/pictures/graphic3.png" alt="design pic">
+                <h2>Web Info Sessions</h2>
+                <p>If you have questions about your career in...</p>
+        </div>
+</section>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="C:/Users/Ryan/Documents/HTML Projects/choc.js"></script>
+</body>
+</html>
